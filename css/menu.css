@@ -1,6 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background: #292929;
+  font-family: 'calibri';
+}
 
 header {
+  background: #03A9F4;
   width: 100%;
   clear: both;
   content:'';
@@ -9,35 +19,25 @@ header {
 
 .menu {
   width: 900px;
-  margin: 0 ;
+  margin: 0 auto;
 }
 
 img {
-  width: 120px;
-  height: 50px;
+  width: 90px;
+  height: 60px;
   float: left;
   padding: 8px;
 
 }
-.menu{
-  width:100% ;
-  text-align: center;
 
-}
 nav {
-  width: 100%;
-  height: 50px;
-  margin: 0px auto;
   float: right;
-  background: #03A9F4;
-
-
 }
 
 nav ul li {
   list-style: none;
   margin-left: 75px;
-  padding: 12px 0 0 0;
+  padding: 12px 0;
   float: left;
   position: relative;
 }
