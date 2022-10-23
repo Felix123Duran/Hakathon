@@ -335,4 +335,9 @@ input[type="submit"]:hover{
     .galeria-cont>img{
         width: 97%;
     }
+    .botones{
+        display: flex;
+        flex-direction: row;
+    }
+
 }

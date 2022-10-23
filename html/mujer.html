@@ -29,15 +29,16 @@
     </header>
 
 
-    <section class="wave-contenedor website">
-        <img src="img/ilustracion1.svg" alt="">
-        <div class="contenedor-textos-main">
-            <h2 class="titulo left">Title of section</h2>
-            <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt enim reiciendis
-                molestias nam tempore. Ullam hic accusantium eligendi ipsam corrupti!</p>
-            <a href="" class="cta">Learn more</a>
-        </div>
-    </section>
+
+  <article class="wave-contenedor website">
+    <img src="img/ilustracion1.svg" alt="">
+    <div class="contenedor-textos-main">
+        <h2 class="titulo left">Title of section</h2>
+        <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt enim reiciendis
+            molestias nam tempore. Ullam hic accusantium eligendi ipsam corrupti!</p>
+        <a href="" class="cta">Learn more</a>
+    </div>
+</article>
 
     <section class="info">
         <div class="contenedor">
@@ -45,70 +46,20 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </section>
-  <div id="Preguntas">
-    <section class="cards contenedor">
-        <h2 class="titulo">Preguntas Frecuentes</h2>
-        <div class="content-cards">
-          <div class="container">
-            <div class="row">
-                <div class="container-faq">
-    
-                    <div class="item-faq">
-                        <div class="question">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit ? <span>Q</span></h3>
-                            <div class="more"><i>+</i></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat vitae tenetur eos doloremque. Tempora sed ut consequatur laboriosam sit mollitia beatae error, omnis deleniti, earum eius odit. Doloribus, nesciunt.<span>A</span></p>
-                        </div>
-                    </div>
-    
-                    <div class="item-faq">
-                        <div class="question">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit ? <span>Q</span></h3>
-                            <div class="more"><i>+</i></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat vitae tenetur eos doloremque. Tempora sed ut consequatur laboriosam sit mollitia beatae error, omnis deleniti, earum eius odit. Doloribus, nesciunt.<span>A</span></p>
-                        </div>
-                    </div>
-    
-                    <div class="item-faq">
-                        <div class="question">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit ? <span>Q</span></h3>
-                            <div class="more"><i>+</i></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat vitae tenetur eos doloremque. Tempora sed ut consequatur laboriosam sit mollitia beatae error, omnis deleniti, earum eius odit. Doloribus, nesciunt.<span>A</span></p>
-                        </div>
-                    </div>
-    
-                    <div class="item-faq">
-                        <div class="question">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit ? <span>Q</span></h3>
-                            <div class="more"><i>+</i></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat vitae tenetur eos doloremque. Tempora sed ut consequatur laboriosam sit mollitia beatae error, omnis deleniti, earum eius odit. Doloribus, nesciunt.<span>A</span></p>
-                        </div>
-                    </div>
-    
-                    <div class="item-faq">
-                        <div class="question">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit ? <span>Q</span></h3>
-                            <div class="more"><i>+</i></div>
-                        </div>
-                        <div class="answer">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat vitae tenetur eos doloremque. Tempora sed ut consequatur laboriosam sit mollitia beatae error, omnis deleniti, earum eius odit. Doloribus, nesciunt.<span>A</span></p>
-                        </div>
-                    </div>
-    
-                </div>
+  <div id="Preguntas"><!--Preguntas frecuentes-->
+    <section class="galeria">
+      <div class="contenedor">
+          <h2 class="titulo">Our work</h2>
+          <article class="galeria-cont">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-        </div>
+          </article>
+      </div>
+  </section>
 
-        </div>
-    </section>
+
   </div>
     <section class="galeria">
         <div class="contenedor">
@@ -143,6 +94,22 @@
     </section>
 
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
-</body>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+      </script>
+  </body>
 
 </html>
