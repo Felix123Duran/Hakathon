@@ -22,3 +22,6 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+  article{
+    margin-top: 20px;
+  }
