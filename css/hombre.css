@@ -1,0 +1,54 @@
+body{
+  background-color: white;
+  background-image: linear-gradient(to bottom left, rgb(245, 197, 197), darkcyan);
+  font-family: 'Raleway', sans-serif;
+}
+.accordion {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 20px;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+  .section{
+    display: flex;
+    justify-content: center;
+  }
+  
+  article{
+    display: flex;
+    flex-direction: column;
+  }
+
